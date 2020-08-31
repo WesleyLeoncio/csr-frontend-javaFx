@@ -1,0 +1,11 @@
+.button.Menu{
+ -fx-background-image: url("menu3.png");
+ -fx-pref-height: 40px;
+ -fx-pref-width: 40px;
+}
+
+.button.visualiazar{
+ -fx-background-image: url("calc.png");
+ -fx-pref-height: 30px;
+ -fx-pref-width: 30px;
+}

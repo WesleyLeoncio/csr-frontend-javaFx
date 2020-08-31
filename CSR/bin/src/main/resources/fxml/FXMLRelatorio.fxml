@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneTelas" prefHeight="519.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelo.control.gerente.FXMLRelatorioController">
+   <children>
+      <Button layoutX="109.0" layoutY="106.0" mnemonicParsing="false" onAction="#relatorioVendaCliente" prefHeight="151.0" prefWidth="143.0" styleClass="relatorio" text="VENDA POR CLIENTE" />
+      <Button layoutX="303.0" layoutY="106.0" mnemonicParsing="false" onAction="#relatorioVendaMesAno" prefHeight="151.0" prefWidth="143.0" styleClass="relatorio" />
+      <Button layoutX="490.0" layoutY="106.0" mnemonicParsing="false" onAction="#relatorioVendaLucroMesAno" prefHeight="151.0" prefWidth="143.0" styleClass="relatorio" />
+      <Button layoutX="391.0" layoutY="314.0" mnemonicParsing="false" onAction="#relatorioVendaMelhorFunc" prefHeight="151.0" prefWidth="143.0" styleClass="relatorio" />
+      <Button layoutX="204.0" layoutY="314.0" mnemonicParsing="false" onAction="#relatorioVendaVeiculoMaisVendido" prefHeight="151.0" prefWidth="143.0" styleClass="relatorio" />
+      <Label layoutX="300.0" layoutY="32.0" text="RELATORIOS">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

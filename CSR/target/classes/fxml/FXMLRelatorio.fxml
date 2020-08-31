@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneTelas" prefHeight="519.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelo.control.gerente.FXMLRelatorioController">
+   <children>
+      <Label layoutX="300.0" layoutY="22.0" text="RELATÓRIOS" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="166.0" fitWidth="177.0" layoutX="83.0" layoutY="85.0" onMouseClicked="#relatorioVendaCliente" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/login/relatorio%201.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="177.0" layoutX="309.0" layoutY="85.0" onMouseClicked="#relatorioVendaMesAno" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/login/relatorio%201.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="177.0" layoutX="513.0" layoutY="85.0" onMouseClicked="#relatorioVendaLucroMesAno" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/login/relatorio%201.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="177.0" layoutX="396.0" layoutY="301.0" onMouseClicked="#relatorioVendaMelhorFunc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/login/relatorio%201.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="177.0" layoutX="178.0" layoutY="297.0" onMouseClicked="#relatorioVendaVeiculoMaisVendido" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/login/relatorio%201.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="110.0" layoutY="243.0" text="Venda por Cliente" textFill="WHITE" />
+      <Label layoutX="329.0" layoutY="242.0" text="Venda por mês e ano" textFill="WHITE" />
+      <Label layoutX="533.0" layoutY="242.0" text="Lucro por mês e ano" textFill="WHITE" />
+      <Label layoutX="193.0" layoutY="458.0" text="Veiculo mais vendidos" textFill="WHITE" />
+      <Label layoutX="411.0" layoutY="458.0" text="Melhores funcionarios" textFill="WHITE" />
+   </children>
+</AnchorPane>

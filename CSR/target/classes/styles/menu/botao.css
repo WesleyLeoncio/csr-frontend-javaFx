@@ -1,0 +1,9 @@
+.botoes{
+   -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+.botoes:hover{
+    -fx-background-color: red;
+    -fx-text-fill: #FFFFFF;
+}

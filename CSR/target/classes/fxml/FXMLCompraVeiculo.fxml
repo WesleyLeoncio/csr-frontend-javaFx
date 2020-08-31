@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneTelas" prefHeight="519.0" prefWidth="758.0" style="-fx-background-color: linear-gradient(to bottom, #c31432, #240b36);;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelo.control.gerente.FXMLCompraVeiculoController">
+   <children>
+      <Pane layoutX="27.0" layoutY="8.0" prefHeight="502.0" prefWidth="705.0" style="-fx-background-color: transparent;">
+         <children>
+            <Pane layoutX="373.0" layoutY="27.0" prefHeight="449.0" prefWidth="323.0" style="-fx-background-color: transparent; -fx-background-radius: 1em;">
+               <children>
+                  <TableView fx:id="tableView" layoutX="10.0" layoutY="-2.0" prefHeight="449.0" prefWidth="309.0" stylesheets="@../styles/tabela/tableView_1.css">
+                    <columns>
+                      <TableColumn fx:id="columnData" prefWidth="151.0" text="DATA " />
+                      <TableColumn fx:id="columnVeiculo" prefWidth="155.0" text="VEICULO" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="12.0" layoutY="6.0" prefHeight="487.0" prefWidth="372.0" style="-fx-background-color: linear-gradient(to right, #c31432, #240b36);; -fx-background-radius: 1em;">
+               <children>
+                  <Group layoutX="2.0" layoutY="87.0">
+                     <children>
+                        <Button fx:id="bt_cadastrar" layoutX="38.0" layoutY="349.0" mnemonicParsing="false" onAction="#efetuarCompra" prefHeight="25.0" prefWidth="86.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Cadastrar">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="147.0" layoutY="349.0" mnemonicParsing="false" onAction="#alterarCompra" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Alterar">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="255.0" layoutY="350.0" mnemonicParsing="false" onAction="#removerCompra" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Deletar">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Group>
+                  <TextField fx:id="txt_numeroPortas" layoutX="35.0" layoutY="102.0" prefHeight="25.0" prefWidth="142.0" />
+                  <Label layoutX="35.0" layoutY="79.0" text="Numero de Portas*" textFill="WHITE" />
+                  <Label layoutX="195.0" layoutY="78.0" text="Combustivel*" textFill="WHITE" />
+                  <TextField fx:id="txt_combustivel" layoutX="194.0" layoutY="101.0" />
+                  <Label layoutX="36.0" layoutY="138.0" text="Ano*" textFill="WHITE" />
+                  <TextField fx:id="txt_ano" layoutX="36.0" layoutY="161.0" prefHeight="25.0" prefWidth="142.0" />
+                  <Label layoutX="35.0" layoutY="204.0" text="Marca*" textFill="WHITE" />
+                  <ComboBox fx:id="comboBoxMarca" layoutX="36.0" layoutY="227.0" prefHeight="25.0" prefWidth="142.0" />
+                  <ComboBox fx:id="comboBoxModelo" layoutX="195.0" layoutY="227.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Label layoutX="198.0" layoutY="206.0" text="Modelo*" textFill="WHITE" />
+                  <Label layoutX="37.0" layoutY="272.0" text="Valor de Compra*" textFill="WHITE" />
+                  <Label layoutX="197.0" layoutY="271.0" text="Valor de Venda*" textFill="WHITE" />
+                  <TextField fx:id="txt_valorVenda" editable="false" layoutX="196.0" layoutY="294.0" />
+                  <TextField fx:id="txt_valorCompra" layoutX="37.0" layoutY="295.0" prefHeight="25.0" prefWidth="142.0" />
+                  <TextField fx:id="txt_cor" layoutX="195.0" layoutY="161.0" prefHeight="25.0" prefWidth="149.0" />
+                  <Label layoutX="195.0" layoutY="139.0" text="Cor*" textFill="WHITE" />
+                  <TextField fx:id="txt_imagem" layoutX="37.0" layoutY="364.0" prefHeight="25.0" prefWidth="211.0" />
+                  <Label layoutX="37.0" layoutY="342.0" prefHeight="17.0" prefWidth="119.0" text="Caminho da Imagem*" textFill="WHITE" />
+                  <Button layoutX="263.0" layoutY="363.0" mnemonicParsing="false" onAction="#carregarImagem" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Carregar">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="35.0" layoutY="19.0" text="Chassi*" textFill="WHITE" />
+                  <TextField fx:id="txt_chassi" layoutX="35.0" layoutY="42.0" prefHeight="25.0" prefWidth="309.0" />
+                  <Button layoutX="319.0" layoutY="292.0" mnemonicParsing="false" onAction="#calcularValor" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparent;" styleClass="visualiazar" stylesheets="@../styles/menu/menu.css" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

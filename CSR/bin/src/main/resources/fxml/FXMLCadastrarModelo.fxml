@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneTelas" prefHeight="519.0" prefWidth="758.0" style="-fx-background-color: linear-gradient(to bottom, #c31432, #240b36);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelo.control.gerente.FXMLCadastrarModeloController">
+   <children>
+      <Pane layoutX="23.0" layoutY="1.0" prefHeight="508.0" prefWidth="740.0" style="-fx-background-color: transparent;" />
+      <Pane layoutX="391.0" layoutY="37.0" prefHeight="449.0" prefWidth="323.0" style="-fx-background-color: transparent; -fx-background-radius: 1em;">
+         <children>
+            <TableView fx:id="tableView" layoutX="10.0" layoutY="-2.0" prefHeight="449.0" prefWidth="309.0" stylesheets="@../styles/tabela/tableView_1.css">
+               <columns>
+                  <TableColumn fx:id="columnMarca" prefWidth="151.0" text="MARCA" />
+                  <TableColumn fx:id="columnModelo" prefWidth="155.0" text="MODELO" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="29.0" layoutY="17.0" prefHeight="487.0" prefWidth="372.0" style="-fx-background-color: linear-gradient(to right, #c31432, #240b36); -fx-background-radius: 1em;">
+         <children>
+            <Group layoutX="-1.0" layoutY="74.0">
+               <children>
+                  <Button layoutX="38.0" layoutY="349.0" mnemonicParsing="false" onAction="#inserir" prefHeight="25.0" prefWidth="86.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Cadastrar">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="151.0" layoutY="349.0" mnemonicParsing="false" onAction="#alterar" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Alterar">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="255.0" layoutY="349.0" mnemonicParsing="false" onAction="#deletar" prefHeight="25.0" prefWidth="82.0" style="-fx-background-radius: 5; -fx-background-color: orange;" text="Deletar">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Label layoutX="75.0" layoutY="176.0" text="Modelo" textFill="WHITE" />
+            <TextField fx:id="txt_modelo" layoutX="75.0" layoutY="199.0" prefHeight="25.0" prefWidth="223.0" />
+            <ComboBox fx:id="comboBoxMarca" layoutX="75.0" layoutY="124.0" prefHeight="25.0" prefWidth="223.0" />
+            <Label layoutX="76.0" layoutY="102.0" text="Marca" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

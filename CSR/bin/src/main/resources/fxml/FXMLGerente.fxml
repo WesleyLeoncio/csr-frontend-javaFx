@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchoPane" prefHeight="526.0" prefWidth="1011.0" style="-fx-background-color: linear-gradient(to right, #c31432, #240b36);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelo.control.gerente.FXMLGerenteController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="526.0" prefWidth="1010.0">
+         <children>
+            <Pane layoutY="-1.0" prefHeight="527.0" prefWidth="244.0" style="-fx-background-color: linear-gradient(to right, #c31432, #240b36); -fx-background-radius: 15;">
+               <children>
+                  <Button layoutY="276.0" mnemonicParsing="false" onAction="#gerarRelatorio" prefHeight="34.0" prefWidth="244.0" styleClass="botoes" stylesheets="@../styles/menu/botao.css" text="Gerar Relatórios " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button layoutY="424.0" mnemonicParsing="false" onAction="#cadastrarModelo" prefHeight="34.0" prefWidth="244.0" styleClass="botoes" stylesheets="@../styles/menu/botao.css" text="Cadastrar Modelo" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button layoutY="375.0" mnemonicParsing="false" onAction="#cadastrarMarca" prefHeight="34.0" prefWidth="244.0" styleClass="botoes" stylesheets="@../styles/menu/botao.css" text="Cadastrar Marca" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button layoutY="224.0" mnemonicParsing="false" onAction="#compraVeiculo" prefHeight="34.0" prefWidth="244.0" styleClass="botoes" stylesheets="@../styles/menu/botao.css" text="Comprar Veículos" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button layoutY="326.0" mnemonicParsing="false" onAction="#cadastrarFunc" prefHeight="34.0" prefWidth="244.0" styleClass="botoes" stylesheets="@../styles/menu/botao.css" text="Cadastrar Funcionario" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button layoutY="476.0" mnemonicParsing="false" onAction="#sairSistema" prefHeight="34.0" prefWidth="244.0" styleClass="botoes" stylesheets="@../styles/menu/botao.css" text="Sair do Sistema" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icones/iconCarro2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icones/iconRelatorio1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icones/iconFuncionario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icones/iconMarca.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icones/iconModelo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icones/iconClose.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <AnchorPane fx:id="anchorPaneTelas" layoutX="248.0" layoutY="2.0" prefHeight="521.0" prefWidth="760.0" style="-fx-background-color: linear-gradient(to right, #c31432, #240b36); -fx-background-radius: 15;">
+               <children>
+                  <ImageView fitHeight="426.0" fitWidth="624.0" layoutX="102.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/login/logo.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="182.0" fitWidth="209.0" layoutX="27.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/login/logo1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
